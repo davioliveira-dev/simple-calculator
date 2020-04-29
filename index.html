@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Simple Calculator!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+            <img src="./assets/images/logo.png" alt="Calculator logo">
+        </div>
+        <div class="input-container">
+            <div class="single-input-container">
+                <p>Enter the first number</p>
+                <input type="text" name="number1" id="number1" class="input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="9">
+            </div>
+            <div class="single-input-container">
+                <p>Enter the second number</p>
+                <input type="text" name="number2" id="number2" class="input"onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="9">
+            </div>
+            <div class="single-input-container">
+                <p>This equals</p>
+                <input type="text" name="result" id="result" class="input" readonly maxlength="9">
+            </div>
+        </div>
+        <div class="button-container">
+            <p>Choose an operator</p>
+            <div class="single-button-container">
+                <input type="button" value="Addition" onclick="operation(value)">
+            </div>
+            <div class="single-button-container">
+                <input type="button" value="Subtraction" onclick="operation(value)">
+            </div>
+            <div class="single-button-container">
+                <input type="button" value="Multiplication" onclick="operation(value)">
+            </div>
+            <div class="single-button-container">
+                <input type="button" value="Division" onclick="operation(value)">
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
